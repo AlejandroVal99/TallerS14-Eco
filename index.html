@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link href = "css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "containerMain">
+      
+      <h1 id = "userName">Loading...</h1>
+      <div class="containerTitle">
+            <p>Your contacts</p>
+            <button class = "btn" id="btn_formNewContact">Add Contact</button>
+        </div>
+
+    
+        <div class="popup" id="newContactForm">    
+          <div class = "popup-contactForm">
+            <h1>Add new Contact</h1>
+            <label for="nameContact"><b>Contact name:</b></label>
+            <input id = "name_Contact" type="text" placeholder="Contact name" name="nameContact">
+        
+            <label for="telephone"><b>Telephone</b></label>
+            <input id = "telephone_Contact" type="text" placeholder="Telephone number" name="telephone">
+        
+            <button class="btn" id ="btn_NewContact">New Contact</button>
+            <button class="btnCancel" id = "btn_CancelNewCon">Close</button>
+          </div>       
+        </div>
+
+        <div class="containerContacts" id="containerContacts" >
+    
+        </div>
+
+        <button id = "btnLogout">Log out</button>
+    </div>
+
+</body>
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyBv5nWjRCtx9EXQkcjd3zy5Dk7y8ZQJsRI",
+    authDomain: "pruebaeco-ce227.firebaseapp.com",
+    databaseURL: "https://pruebaeco-ce227.firebaseio.com",
+    projectId: "pruebaeco-ce227",
+    storageBucket: "pruebaeco-ce227.appspot.com",
+    messagingSenderId: "831118328954",
+    appId: "1:831118328954:web:7605c573be02be4a7f27c3",
+    measurementId: "G-S0BP3DHTLC"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script>const database = firebase.database();</script>
+<script src = "components/contac.js"></script>
+<script src="js/index.js"></script>

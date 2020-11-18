@@ -1,0 +1,37 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+   
+    background: powderblue;
+}
+.containerLogin{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto ;
+    padding: 20px 20px 20px 20px;
+}
+p{
+    font-size: 10px;
+    color:blue;
+}
+input{
+    padding: 8px;
+    border-radius: 0.5em;
+    border-color: solid grey;
+}
+
+button{
+    padding: 8px;
+    border-radius: 0.5em;
+    background: white;
+    font-weight: bold;
+    color: blue;                 
+
+}
+.containerLogin *{
+    margin: 8px;
+}

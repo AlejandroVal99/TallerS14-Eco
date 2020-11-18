@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>LogIn</title>
+    <link href="css/logIn.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="containerMain">
+        <div class="containerLogin">
+            <h1>Log in</h1>
+            <label for="emailInput"><b>Email</b></label>
+            <input id="email" type="text" placeholder="Email" name="emailInput">
+
+            <label for="passwordInput"><b>Password</b></label>
+            <input id="password" type="password" placeholder="password" name="passwordInput">
+
+            <button class="btn" id="btn_Login">Log in</button>
+
+
+
+            <div class="containerSignUp">
+                <p>Don't have an account? <a href="signup.html">Sign up</a>.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase.js"></script>
+
+
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyBv5nWjRCtx9EXQkcjd3zy5Dk7y8ZQJsRI",
+        authDomain: "pruebaeco-ce227.firebaseapp.com",
+        databaseURL: "https://pruebaeco-ce227.firebaseio.com",
+        projectId: "pruebaeco-ce227",
+        storageBucket: "pruebaeco-ce227.appspot.com",
+        messagingSenderId: "831118328954",
+        appId: "1:831118328954:web:7605c573be02be4a7f27c3",
+        measurementId: "G-S0BP3DHTLC"
+    };
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/logIn.js"></script>

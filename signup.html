@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SingUp</title>
+  <link href="css/signUp.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div>
+    <div class="containerSignup">
+
+      <h1>Sign Up</h1>
+      
+      <label for="nameInput"><b>Name</b></label>
+      <input id="name" type="text" placeholder="Name" name="nameInput">
+
+      <label for="telInput"><b>Telephone</b></label>
+      <input id="telephone" type="text" placeholder="Telephone" name="telInput">
+
+      <label for="emailInput"><b>Email</b></label>
+      <input type="text" id = "email" placeholder="Email" name="emailInput">
+
+      <label for="passwordInput"><b>Password</b></label>
+      <input id = "password" type="password" placeholder="password" name="passwordInput">
+
+      <label for="passwordConInput"><b>Confirm Password</b></label>
+      <input id = "passwordCon" type="password" placeholder="Confirm password" name="passwordConInput">
+
+      <button class="btn" id="btn_SignUp">Sign up</button>
+      
+      <div class="containerLogin">
+        <p>Already have an account? <a href="login.html">Log in</a>.</p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</body>
+
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyBv5nWjRCtx9EXQkcjd3zy5Dk7y8ZQJsRI",
+    authDomain: "pruebaeco-ce227.firebaseapp.com",
+    databaseURL: "https://pruebaeco-ce227.firebaseio.com",
+    projectId: "pruebaeco-ce227",
+    storageBucket: "pruebaeco-ce227.appspot.com",
+    messagingSenderId: "831118328954",
+    appId: "1:831118328954:web:7605c573be02be4a7f27c3",
+    measurementId: "G-S0BP3DHTLC"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/signup.js"></script>
